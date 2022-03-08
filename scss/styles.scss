@@ -1,3 +1,10 @@
+ //npm i
+ //npm run scss (starts watching over file)
+
+$accentColor: #EBFF00;
+$mainGrey: #5e5e5e;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +12,24 @@
 
 #topBar
 {
-    background-color: #EBFF00;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: $mainGrey;
     overflow:  hidden;
 }
+
 #topBar a:not(#mainPage){
     float: right;
     text-align: center;
     padding: 20px;
     text-decoration: none;
 }
+
+#topBar a:not(.activePage){
+    color: $accentColor;
+}
+
 #mainPage
 {
     float: left;
@@ -22,13 +38,23 @@
     text-decoration: none;
 }
 
+.activePage
+{
+    background-color: $accentColor;
+    color: $mainGrey;
+}
+
 body
 {
     background-color: white;
 }
 
-a{
+a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+}
+
+#content
+{
+    padding-top: 100px;
 }
