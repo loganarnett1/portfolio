@@ -3,87 +3,42 @@
 
 $accentColor: #EBFF00;
 $mainGrey: #5e5e5e;
+$pageWidth: 75em;
 
-* {
-    margin: 0;
-    padding: 0;
-}
-html
+nav
 {
-    height: 100%;
+    margin: auto;
+    width: $pageWidth;
+    background-color: red;
 }
 
-#topBar
+nav ul
 {
-    position:fixed;
-    top: 0;
-    width: 100%;
-    background-color: $mainGrey;
-    overflow:  hidden;
-    z-index: 999;
+    list-style-type: none;
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }
 
-#topBar a:not(#mainPage){
-    float: right;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
+nav li
+{
+    float: left;
 }
 
-#topBar a:not(.activePage){
-    color: $accentColor;
+nav a
+{
+    list-style: none;
+    display: block;
+    padding: 1em;
 }
+
+
+
+
 
 #mainPage
 {
-    float: left;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.activePage
-{
-    background-color: $accentColor;
-    color: $mainGrey;
-}
-
-body
-{
-    background-color: white;
-    height: 100%;
-}
-
-a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#content
-{
-    padding-top: 100px;
-}
-
-.fillScreen
-{
-    width: 100%;
-    height: 100%;
-
-}
-
-
-#aboutMeProfileContainer{
-    width: 10em;
-    height: 20em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-}
-
-#aboutMeProfileContainer img
-{
-    width: 100px;
-    height: 100px;
+    margin: auto;
+    width: $pageWidth;
+    padding-bottom: 5em;
+    background-color: #5e5e5e;
 }
