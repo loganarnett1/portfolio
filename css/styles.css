@@ -8,7 +8,7 @@
 }
 */
 body {
-  background-color: #5c5858; }
+  background-color: #ffffff; }
 
 header {
   height: 100vh;
@@ -38,7 +38,22 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  padding: 0;
+  z-index: -1; }
 
-#test {
-  top: 100vh; }
+#overVideoContainer {
+  z-index: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: fit-content; }
+
+#overVideoContainer img {
+  float: right; }
+
+.headerLink {
+  display: block;
+  height: 56px;
+  margin-top: -56px;
+  visibility: hidden; }

@@ -2,9 +2,11 @@
  //npm run scss (starts watching over file)
 
 $accentColor: #EBFF00;
-$mainGrey: #5e5e5e;
+$mainBackground: #ffffff;
 $pageWidth: 75em;
 
+$navbarHeightExpanded: 3em;
+$navbarHeight: 56px;
 /*
 #mainPage
 {
@@ -17,7 +19,7 @@ $pageWidth: 75em;
 
 body 
 {
-    background-color: rgb(92, 88, 88);
+    background-color: $mainBackground;
 
 }
 
@@ -62,13 +64,29 @@ header
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    padding: 0;
+    z-index: -1;
     
-  }
+}
   
+#overVideoContainer
+{
+    z-index: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+}
 
+#overVideoContainer img
+{
+    float: right;
+}
 
-
-  #test
-  {
-    top: 100vh;
-  }
+.headerLink
+{
+    display: block;
+    height: $navbarHeight;
+    margin-top: -$navbarHeight;
+    visibility: hidden;
+}
