@@ -19,6 +19,12 @@ header {
   max-width: 20em;
   height: auto; }
 
+#imageOfMe2 {
+  max-width: 20em;
+  height: auto;
+  float: right;
+  padding-right: 2em; }
+
 .fullScreenVideoBackground {
   position: absolute;
   top: 0;
@@ -28,13 +34,10 @@ header {
   overflow: hidden; }
 
 .fullScreenVideoBackground video {
-  /* Make video to at least 100% wide and tall */
   min-width: 100%;
   min-height: 100%;
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
-  /* Center the video */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,7 +46,7 @@ header {
   z-index: -1; }
 
 #overVideoContainer {
-  z-index: 1;
+  z-index: 2;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -52,8 +55,47 @@ header {
 #overVideoContainer img {
   float: right; }
 
+#mainVideoContainer .overlay {
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3; }
+
 .headerLink {
   display: block;
   height: 56px;
   margin-top: -56px;
   visibility: hidden; }
+
+.titleSection {
+  padding: .5em;
+  text-align: center;
+  background-color: #06cdff;
+  font-weight: 200; }
+
+.titleSectionB {
+  padding: .5em;
+  text-align: center;
+  background-color: #06cdff;
+  font-weight: 200; }
+
+#selectedNav {
+  color: #06cdff;
+  font-weight: 500; }
+
+.aboutMeLabledSection {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.aboutMeLabledSection h2 {
+  font-size: 15px; }
+
+.paddingSides {
+  padding-left: 20%;
+  padding-right: 20%; }

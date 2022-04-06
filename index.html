@@ -1,276 +1,212 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Logan Arnett Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Logan Arnett Portfolio</title>
     </head>
     <body>
 
-            <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-                <div class="container">
-                    <div class="col-md-6 float-md-left">
-                        <a href="#" class="navbar-brand mb-0 h1 ">Logan Arnett</a>
-                    </div>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <div class="col-md-6 float-md-left">
+                    <a href="#" class="navbar-brand mb-0 h1 topName" id="selectedNav">Logan Arnett</a>
+                </div>
 
-                    <div class="col-md-6 ">
-                        <button 
-                        type="button" 
-                        class="navbar-toggler" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarNav" 
-                        aria aria-controls="navbarNav" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="col-md-6 ">
+                    <button 
+                    type="button" 
+                    class="navbar-toggler" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav" id="selectionBoxes">
-                                <li class="nav-item active">
-                                    <a href="#experianceA" class="nav-link active">Experience</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">About Me</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav" id="selectionBoxes">
+                            <li class="nav-item active">
+                                <a href="#experianceA" data-toggle="collapse" data-target="#navbarNav" class="nav-link navButtons experianceA" id="">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skillsA" data-toggle="collapse" data-target="#navbarNav" class="nav-link navButtons skillsA" id="">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projectsA" data-toggle="collapse" data-target="#navbarNav" class="nav-link navButtons projectsA" id="">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#aboutMeA" data-toggle="collapse" data-target="#navbarNav" class="nav-link navButtons aboutMeA" id="">About Me</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        
-
-
-
-
-            
-
-
-
-                <section id="mainVideoContainer" class="fullScreenVideoBackground">
-                    <video type="video/mp4" id="topVideo" src="videos/sample.mp4" muted></video>
-                    <div class="overlay"></div>
-                    <div class="container" id="overVideoContainer">
-                        <div class="row">
-                            <div class="col-sm">
-                                <h1>Logan Arnett</h1>
-                                <h2>IT student at the University of Cincinnati</h2>
-                            </div>
-                            <div class="col-sm">
-                                <img id="imageOfMe" src="images/profileShadowCircle.png" alt="image of me">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </section>
-
-            <div id="topVideoPadding"> <!--spacer for end of absolute div-->
             </div>
+        </nav>
+        
 
 
-            <a id="experianceA" class="headerLink"></a>
-            <section>
-                <div class="container">
-                    
-                    <h1>Experience</h1>
+
+
+            
+
+
+
+        <section id="mainVideoContainer" class="fullScreenVideoBackground">
+            <video type="video/mp4" id="topVideo" src="videos/sample.mp4" muted></video>
+            <div class="overlay"></div>
+            <div class="container" id="overVideoContainer">
+                <div class="row">
+                    <div class="col-sm">
+                        <h1>Logan Arnett</h1>
+                        <h2>IT student at the University of Cincinnati</h2>
+                    </div>
+                    <div class="col-sm">
+                        <img id="imageOfMe" src="images/profileShadowCircle.png" alt="image of me">
+                    </div>
                 </div>
-                <div class="container">
-                    <p>test, test, test</p>
+            </div>
+            
+        </section>
+
+        <div id="topVideoPadding"> <!--spacer for end of absolute div-->
+        </div>
+
+
+        <a id="experianceA" class="headerLink"></a>
+        <h1 class="titleSection">Experience</h1>
+        <section class="labledSection">
+            <div class="container">
+                <p>test, test, test</p>
+            </div>
+        </section>
+
+
+        <a id="skillsA" class="headerLink"></a>
+        <h1 class="titleSectionB">Skills</h1>
+
+        <div class="paddingSides">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
                 </div>
-            </section>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
 
+        <a id="projectsA" class="headerLink"></a>
+        <h1 class="titleSection">Projects</h1>
+
+        <a id="aboutMeA" class="headerLink"></a>
+        <h1 class="titleSectionB">About Me</h1>
 
 
+        <section class="aboutMeLabledSection">
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-sm-5">
+                        <img id="imageOfMe2" src="images/profileShadowCircle.png" alt="image of me">
+                    </div>
 
-
-                <h6>
-                    Test 1
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-                <h6>
-                    Test
-                </h6>
-            
-            
-
-
-
-            
-
-
-
-
-
-<!--
-            
-            <header class="header d-flex justify-content-center">
-                <div class="container">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-md-7">
-
-                            <div class="header-content">
-                                <h3 class="header-title">Logan Arnett</h3>
-                                <h4 class="header-subtitle">IT student at the University of Cincinnati</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolores voluptatem voluptatum adipisci vel, beatae unde! Mollitia voluptatum, ullam quisquam optio!</p>
-                            </div>  
+                    <div class="col-sm">
+                        <h1>Logan Arnett</h1>
+                        <h2>Information Technology - Game Design and Simulations Track
+                            University of Cincinnati (Expected graduation - 2025)
+                        </h2>
+                        <a href = "mailto: arnettln@mail.uc.edu">arnettln@mail.uc.edu</a>
+                        <a href = "mailto: loganarnett@gmail.com">loganarnett@gmail.com</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">Linkedin</div>
+                                <div class="col-sm">Resume</div>
+                            </div>
                         </div>
-                        <div class="col-md-5 d-none d-md-block">
-                            <img id="imageOfMe" src="images/profileShadowCircle.png" alt="image of me">
-                        
-                        </div>
-                    </div>  
+                    </div>
+
                 </div>
-            </header>
-
-            <video src=""></video>
-
+            </div>
+        </section>
 
 
-        -->
+        <div class="paddingSides">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <img id="imageOfMe2" src="images/profileShadowCircle.png" alt="image of me">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <h1>Logan Arnett</h1>
+                        <h2>Information Technology - Game Design and Simulations Track
+                            University of Cincinnati (Expected graduation - 2025)
+                        </h2>
+                        <a href = "mailto: arnettln@mail.uc.edu">arnettln@mail.uc.edu</a>
+                        <a href = "mailto: loganarnett@gmail.com">loganarnett@gmail.com</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">Linkedin</div>
+                                <div class="col-sm">Resume</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+        <section class="aboutMeLabledSection">
+            <div id="imageOfMeColumn">
+                <img id="imageOfMe2" src="images/profileShadowCircle.png" alt="image of me">
+            </div>
+            <div id="infoColumn">
+                <h1>Logan Arnett</h1>
+                <h2>Information Technology - Game Design and Simulations Track
+                    University of Cincinnati (Expected graduation - 2025)
+                </h2>
+                <a href = "mailto: arnettln@mail.uc.edu">arnettln@mail.uc.edu</a>
+                <a href = "mailto: loganarnett@gmail.com">loganarnett@gmail.com</a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">Linkedin</div>
+                        <div class="col-sm">Resume</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
 
 
-        
 
 
 
 
-
-
-
-        
-        <h1>Hello, world!</h1>
         <script src="javascript/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

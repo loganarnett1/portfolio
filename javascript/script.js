@@ -28,3 +28,41 @@ window.onresize = updatePadding;
 updatePadding();
 
 
+
+
+const sections = document.querySelectorAll(`.headerLink`);
+const navButtons = document.querySelectorAll(`.navButtons`);
+
+window.addEventListener('scroll', ()=>
+{
+  let currentTab = ``;
+  sections.forEach( section => {
+    if(scrollY + 5 >= section.offsetTop)
+    {
+      currentTab = section.getAttribute('id');
+    }
+  })
+
+  document.querySelector(".topName").removeAttribute(`id`);
+
+  let found = false;
+  navButtons.forEach(item => {
+    item.classList.remove(`active`);
+    item.id = "";
+    if(item.classList.contains(currentTab))
+    {
+      item.classList.add('active');
+      item.id = "selectedNav"
+      found = true;
+    }
+  })
+  if(!found)
+  {
+    document.querySelector(".topName").id = "selectedNav";
+  }
+
+
+})
+
+
+
