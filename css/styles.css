@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  letter-spacing: .5px; }
 
 .SizingCompressionContainer {
   max-width: 1000px;
@@ -11,7 +13,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  max-height: 100%; }
 
 .SplitLayoutSection {
   display: grid;
@@ -59,15 +62,37 @@ header {
 
 #HeaderContainer {
   min-height: 70vh;
+  height: auto;
   position: relative; }
 
 header img {
   max-width: 300px;
   height: auto; }
 
-header div button {
+@media only screen and (max-width: 400px) {
+  header img {
+    max-width: 200px; } }
+
+header h1 {
+  font-size: 3rem; }
+
+header h2 {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  font-size: 1.1rem; }
+
+#HeaderLinks {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#HeaderLinks a {
   width: 40%;
-  padding: 10px; }
+  padding: 10px;
+  text-decoration: none;
+  background-color: black;
+  margin-top: 10px;
+  color: white;
+  border-radius: 5px; }
 
 nav {
   text-align: center;
