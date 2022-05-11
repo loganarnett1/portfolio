@@ -1,3 +1,102 @@
 * {
   margin: 0;
   padding: 0; }
+
+.SizingCompressionContainer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.CenterVerticalGroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.SplitLayoutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.ImageHolder {
+  position: relative; }
+
+.ImageHolder img {
+  width: 100%;
+  display: block; }
+
+.ImageHolder ul {
+  list-style: none; }
+
+.ImageHolder li:not(.CarouselImageActive) {
+  display: none; }
+
+.ImageHolder button {
+  background-color: #00000034;
+  height: 30px;
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  height: 100%;
+  font-size: large; }
+
+.ImageHolder button:hover {
+  background-color: #00000093;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: larger; }
+
+.CarouselButtonPrevious {
+  position: absolute;
+  left: 0; }
+
+.CarouselButtonNext {
+  position: absolute;
+  right: 0; }
+
+header {
+  text-align: center; }
+
+#HeaderContainer {
+  min-height: 70vh;
+  position: relative; }
+
+header img {
+  max-width: 300px;
+  height: auto; }
+
+header div button {
+  width: 40%;
+  padding: 10px; }
+
+nav {
+  text-align: center;
+  background-color: #2b2b2b;
+  position: sticky;
+  top: 0;
+  z-index: 99999999; }
+
+nav div {
+  margin: auto; }
+
+nav button {
+  width: 30%;
+  background-color: #5a5a5a;
+  color: #ffffff;
+  padding: 10px;
+  border: 0; }
+
+nav button:hover {
+  background-color: #6b6b6b; }
+
+#ProjectsSection {
+  min-height: 400px;
+  background-color: rgba(236, 116, 79, 0.74); }
+
+#SkillsSection {
+  min-height: 400px;
+  background-color: rgba(79, 236, 105, 0.74); }
+
+#ExperiencesSection {
+  min-height: 400px;
+  background-color: rgba(236, 79, 171, 0.74); }

@@ -1,10 +1,179 @@
  //npm i
  //npm run scss (starts watching over file)
 
-$accentColor: #EBFF00;
-$mainGrey: #5e5e5e;
-
+///////////////////////General Styling///////////////////////
+/////////////////////////////////////////////////////////////
 * {
     margin: 0;
     padding: 0;
+}
+.SizingCompressionContainer
+{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.CenterVerticalGroup
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.SplitLayoutSection
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.SplitLayoutSectionItem
+{
+
+}
+
+
+//Image holder Carousel
+.ImageHolder
+{
+    position: relative;
+
+}
+$buttonOverlayColor: #00000034;
+$buttonOverlayColorDarker: #00000093;
+.ImageHolder img
+{
+    width: 100%;
+    display: block;
+}
+.ImageHolder ul
+{
+    list-style: none;
+}
+.ImageHolder li:not(.CarouselImageActive)
+{
+    display: none;
+}
+
+.ImageHolder button //both button styling
+{
+    background-color: $buttonOverlayColor;
+    height: 30px;
+    border: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    height: 100%;
+    font-size: large;
+}
+.ImageHolder button:hover
+{
+    background-color: $buttonOverlayColorDarker;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: larger;
+}
+.CarouselButtonPrevious
+{
+    position: absolute;
+    left: 0;
+}
+.CarouselButtonNext
+{
+    position: absolute;
+    right: 0;
+}
+.CarouselImageActive
+{
+
+}
+
+
+
+
+
+///////////////////////header section////////////////////////
+///////////////////////////////////////////////////////////// 
+header
+{
+    text-align: center;
+    
+}
+#HeaderContainer
+{
+    min-height: 70vh;
+    position: relative;
+}
+header img //profile image 
+{
+    max-width: 300px;
+    height: auto;
+}
+header h1 //"Logan Arnett"
+{
+
+}
+header h2 //"Information Technology student at the University of Cincinnati"
+{
+
+}
+header div button //Resume and LinkedIn buttons
+{
+    width: 40%;
+    padding: 10px;
+}
+
+////////////////////////Navigation Bar///////////////////////
+///////////////////////////////////////////////////////////// 
+$navbarBackground: #2b2b2b;
+$navbarBackgroundAlt: #5a5a5a;
+$navbarBackgroundAlt2: #6b6b6b;
+$navbartextColor: #ffffff;
+nav
+{
+    text-align: center;
+    background-color: $navbarBackground;
+
+    //Make it stick to top of screen
+    position:sticky;
+	top:0;
+    z-index: 99999999;//send to top
+}
+nav div
+{
+    margin: auto;
+}
+nav button //navigation buttons
+{
+    width: 30%;
+    background-color: $navbarBackgroundAlt;
+    color: $navbartextColor;    
+    padding: 10px;
+    border: 0;
+}
+nav button:hover //navigation buttons
+{
+    background-color: $navbarBackgroundAlt2;
+}
+
+//////////////////////Projects Section///////////////////////
+///////////////////////////////////////////////////////////// 
+#ProjectsSection
+{
+    min-height: 400px;
+    background-color: rgba(236, 116, 79, 0.74);
+}
+
+////////////////////////Skills Section///////////////////////
+///////////////////////////////////////////////////////////// 
+#SkillsSection
+{
+    min-height: 400px;
+    background-color: rgba(79, 236, 105, 0.74);
+}
+
+////////////////////Experiences Section//////////////////////
+///////////////////////////////////////////////////////////// 
+#ExperiencesSection
+{
+    min-height: 400px;
+    background-color: rgba(236, 79, 171, 0.74);
 }
