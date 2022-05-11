@@ -7,7 +7,9 @@
 .SizingCompressionContainer {
   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-right: .5em;
+  padding-left: .5em; }
 
 .CenterVerticalGroup {
   position: absolute;
@@ -26,6 +28,37 @@
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 3px; }
+
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem 0; }
+
+.sectionBlock h2 {
+  text-align: center;
+  padding-bottom: .4em;
+  min-height: 60px; }
+
+.sectionBlock {
+  background-color: #424242;
+  border-radius: 20px; }
+
+.sectionBlock li {
+  color: white;
+  letter-spacing: 1px; }
+
+.sectionBlock h2 {
+  background-color: #181818;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: .2em;
+  color: #ffffff;
+  minimum-height: 2em; }
+
+.sectionBlock ul {
+  list-style: none;
+  text-align: center; }
 
 .ImageHolder {
   position: relative; }
@@ -138,8 +171,7 @@ nav button:hover {
   color: white; }
 
 #SkillsSection {
-  min-height: 400px;
-  background-color: rgba(230, 230, 230, 0.74); }
+  background-color: rgba(255, 255, 255, 0.74); }
 
 #ExperiencesTitle {
   background-color: #03db6f;
