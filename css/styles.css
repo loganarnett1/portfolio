@@ -20,6 +20,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
+.TitleBlock {
+  text-align: center;
+  padding: 40px;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 3px; }
+
 .ImageHolder {
   position: relative; }
 
@@ -114,14 +121,30 @@ nav button {
 nav button:hover {
   background-color: #6b6b6b; }
 
+#ProjectsTitle {
+  background-color: #0082be;
+  color: white; }
+
 #ProjectsSection {
   min-height: 400px;
-  background-color: rgba(236, 116, 79, 0.74); }
+  background-color: rgba(230, 230, 230, 0.74); }
+
+#ProjectsSection .SplitLayoutSection {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+#SkillsTitle {
+  background-color: #181818;
+  color: white; }
 
 #SkillsSection {
   min-height: 400px;
-  background-color: rgba(79, 236, 105, 0.74); }
+  background-color: rgba(230, 230, 230, 0.74); }
+
+#ExperiencesTitle {
+  background-color: #03db6f;
+  color: white; }
 
 #ExperiencesSection {
   min-height: 400px;
-  background-color: rgba(236, 79, 171, 0.74); }
+  background-color: rgba(230, 230, 230, 0.74); }
