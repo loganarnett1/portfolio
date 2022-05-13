@@ -3,7 +3,6 @@
 
 ///////////////////////General Styling///////////////////////
 /////////////////////////////////////////////////////////////
-
 $gridBlockColor: #424242;
 * 
 {
@@ -40,7 +39,7 @@ $gridBlockColor: #424242;
 .TitleBlock
 {
     text-align: center;
-    padding: 40px;
+    padding: 25px;
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -76,7 +75,6 @@ $gridBlockColor: #424242;
     border-top-right-radius: 20px;
     padding-top: .2em;
     color:#ffffff;
-    minimum-height: 2em;
 }
 .sectionBlock ul
 {
@@ -85,13 +83,12 @@ $gridBlockColor: #424242;
 }
 
 //Image holder Carousel
+$buttonOverlayColor: #0000007c;
+$buttonOverlayColorDarker: #00000093;
 .ImageHolder
 {
     position: relative;
-
 }
-$buttonOverlayColor: #0000007c;
-$buttonOverlayColorDarker: #00000093;
 .ImageHolder img
 {
     width: 100%;
@@ -101,11 +98,10 @@ $buttonOverlayColorDarker: #00000093;
 {
     list-style: none;
 }
-.ImageHolder li:not(.CarouselImageActive)
+.ImageHolder li:not(.CarouselImageActive) //Hide photos without the active class
 {
     display: none;
 }
-
 .ImageHolder button //both button styling
 {
     background-color: $buttonOverlayColor;
@@ -117,7 +113,7 @@ $buttonOverlayColorDarker: #00000093;
     height: 100%;
     font-size: large;
 }
-.ImageHolder button:hover
+.ImageHolder button:hover //hover styling
 {
     background-color: $buttonOverlayColorDarker;
     padding-left: 35px;
@@ -134,11 +130,6 @@ $buttonOverlayColorDarker: #00000093;
     position: absolute;
     right: 0;
 }
-.CarouselImageActive
-{
-
-}
-
 
 ///////////////////////header section////////////////////////
 ///////////////////////////////////////////////////////////// 
@@ -263,4 +254,14 @@ nav button:hover //navigation buttons
 {
     min-height: 400px;
     background-color: rgba(230, 230, 230, 0.74);
+}
+#WorkExperienceSection
+{
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    padding: 20px;
+}
+#EducationalExperienceSection
+{
+
 }

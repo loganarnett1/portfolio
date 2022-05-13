@@ -1,8 +1,10 @@
 let firstImageHolder = document.getElementById("FirstImageHolder");
 let secondImageHolder = document.getElementById("SecondImageHolder");
+let thirdImageHolder = document.getElementById("ThirdImageHolder");
 
 setupImageCarousel(firstImageHolder);
 setupImageCarousel(secondImageHolder);
+setupImageCarousel(thirdImageHolder);
 
 function setupImageCarousel(imageHolder) 
 {
