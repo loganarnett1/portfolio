@@ -223,13 +223,34 @@ nav button:hover //navigation buttons
 #ProjectsSection
 {
     min-height: 400px;
-    background-color: rgba(230, 230, 230, 0.74);
+    //background-color: rgba(230, 230, 230, 0.74);
 }
 #ProjectsSection .SplitLayoutSection
 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#ProjectsSection .SizingCompressionContainer section
+{
+    padding-top: 3em;
+}
+@media only screen and (max-width: 400px) {
+    #ProjectsSection .SizingCompressionContainer section  
+    {
+        padding-top: 2em;
+    }
+}
+#ProjectsSection .SizingCompressionContainer section h2
+{
+    font-size: xx-large;
+}
+#ProjectsSection a
+{
+    //text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 170, 43);
+}
+
 
 ////////////////////////Skills Section///////////////////////
 ///////////////////////////////////////////////////////////// 
@@ -253,15 +274,49 @@ nav button:hover //navigation buttons
 #ExperiencesSection
 {
     min-height: 400px;
-    background-color: rgba(230, 230, 230, 0.74);
+    //background-color: rgba(230, 230, 230, 0.74);
 }
+$experiencesTextColor: #ffffff;
 #WorkExperienceSection
 {
     background-color: #2b2b2b;
     border-radius: 20px;
     padding: 20px;
+    margin-top: 1.5em;
+}
+#WorkExperienceSection h2
+{
+    text-align: center;
+    padding-bottom: .5em;
+    color: $experiencesTextColor;
 }
 #EducationalExperienceSection
 {
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 
+}
+#EducationalExperienceSection h2
+{
+    text-align: center;
+    padding-bottom: .5em;
+    color: $experiencesTextColor;
+}
+#ExperiencesSection ul
+{
+    color: $experiencesTextColor;
+}
+#ExperiencesSection ul li
+{
+    padding-bottom: .5em;
+    margin-left: 1.5em;
+}
+#ExperiencesSection h1
+{
+    margin-left: 1.2em;
+    padding-bottom: .5em;
+    color: $experiencesTextColor;
 }
